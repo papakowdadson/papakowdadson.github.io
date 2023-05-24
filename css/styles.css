@@ -130,3 +130,43 @@ main > .tagline {
 		filter: hue-rotate(360deg);
 	}
 }
+
+.container{
+	margin-top: 5px;
+	background-color: white;
+	color: black;
+	border-radius: 15px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.containerHeader{
+	padding-top: 5px;
+}
+.item{
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #00000080;
+	border: #18191f solid 5px;
+	margin: 5px;
+}
+.containerMail{
+	margin-top: 5px;
+	background-color: white;
+	color: black;
+	border-radius: 15px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.sendMail{
+	margin-top: 5px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	border: none;
+	background-color: #18191f;
+	color: white;
+}
