@@ -133,11 +133,12 @@ main > .tagline {
 
 .container{
 	margin-top: 5px;
-	background-color: white;
+	background-color: rgb(31, 30, 30);
 	color: black;
 	border-radius: 15px;
 	padding: 10px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -150,6 +151,12 @@ main > .tagline {
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px #00000080;
 	margin: 5px;
+	overflow: hidden;
+}
+.itemImage{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
 }
 .containerMail{
 	margin-top: 5px;
