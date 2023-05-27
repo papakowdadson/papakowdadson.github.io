@@ -209,8 +209,6 @@ main > .tagline {
     "a3 b3 c3";
 }
 .itemImagegrid:nth-child(1) {
-  border: #8d8c8c solid 3px;
-  border-radius: 10px;
   box-shadow: 2px 2px 2px #00000080;
   grid-row-start: 1;
   grid-row-end: 1;
@@ -218,8 +216,6 @@ main > .tagline {
   grid-column-end: span 2;
 }
 .itemImagegrid:nth-child(2) {
-  border: #f80606 solid 3px;
-  border-radius: 10px;
   box-shadow: 2px 2px 2px #00000080;
   grid-row-start: 1;
   grid-row-end: 1;
@@ -228,8 +224,6 @@ main > .tagline {
 }
 
 .itemImagegrid:nth-child(3) {
-  border: #92f06d solid 3px;
-  border-radius: 10px;
   box-shadow: 2px 2px 2px #00000080;
   grid-row-start: 2;
   grid-row-end: 2;
@@ -237,7 +231,6 @@ main > .tagline {
   grid-column-end: span 3;
 }
 .itemImagegrid:nth-child(4) {
-  border: brown solid 4px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px #00000080;
   grid-row-start: 3;
@@ -254,8 +247,6 @@ main > .tagline {
   grid-column-end: span 2;
 }
 .itemImagegrid:nth-child(6) {
-  border: yellow solid 4px;
-  border-radius: 10px;
   box-shadow: 2px 2px 2px #00000080;
   grid-area: b3;
 }
@@ -264,6 +255,14 @@ main > .tagline {
   width: 100%;
   height: 100%;
   object-fit: fit;
+  border: 4px solid transparent;
+  border-radius: 10px;
+  background: 
+    linear-gradient(to right, white, white), 
+    linear-gradient(to right, rgb(34, 33, 33) , rgb(146, 146, 223)); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  
 }
 
 @keyframes fadein {
