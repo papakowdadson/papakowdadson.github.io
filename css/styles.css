@@ -27,10 +27,7 @@ textarea {
       overflow-x: hidden;
   
   }
-  .container{
-    height: 100px;
-  overflow: hidden;
-  }
+  
 }
 
 @media (min-width: 768px) {
@@ -166,9 +163,26 @@ main > .tagline {
   justify-content: center;
   align-items: center;
   animation: fadein 3s;
-  
+  height: 400px;
+  overflow: hidden;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
 .containerHeader {
   font-weight: 300;
   width: fit-content;
