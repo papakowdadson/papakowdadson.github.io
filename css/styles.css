@@ -50,7 +50,11 @@ textarea {
 
 .icons-social i {
   font-size: 3em;
+  padding: 10px;
+  margin: 5px;
 }
+
+
 
 /* Custom Styles */
 
@@ -75,10 +79,13 @@ main > .tagline {
   margin: 1.5rem 0;
   font-weight: 100;
 }
-
-.icons-social i {
-  padding: 10px;
+main > .taglineHeader {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0 0;
+  font-weight: bolder;
 }
+
+
 
 .devto {
   margin-bottom: -0.2rem;
@@ -173,6 +180,12 @@ main > .tagline {
 
 
 }
+.myName{
+  color:#42a4f5;
+}
+.myProfession{
+  color:#42a4f5;
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .container::-webkit-scrollbar {
@@ -180,22 +193,34 @@ main > .tagline {
 }
 
 
-
+.containerHeaderMail {
+  font-weight: bold;
+  width: fit-content;
+  margin: 10px 0px 5px 5px;
+  padding: 2px;
+ 
+  
+}
 
 
 .containerHeader {
-  font-weight: 300;
+  font-weight: bold;
   width: fit-content;
   animation: sideWaysMove 5s linear;
-  margin: 10px 0px 5px 5px
+  margin: 10px 0px 5px 5px;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #42a4f5, inset 2px 2px 10px #00000080,
+  inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+  inset 2px 2px 10px #00000080;
 }
 
 .containerHeader:hover {
   animation: animate 3s linear 0.7s infinite;
-  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080;
+  box-shadow: 2px 2px 2px #42a4f5, 10px 1px 12px #00000080,
+  2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+  inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+  inset 2px 2px 10px #00000080;
 }
 
 .item {
