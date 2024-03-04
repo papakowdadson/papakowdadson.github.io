@@ -22,6 +22,10 @@ textarea {
   border: none;
   color: var(--tertiaryColor);
 }
+textarea:focus{
+  outline: none !important;
+  border:2px solid var(--primaryColor);
+}
 body {
   background-color: var(--backgroundColor);
 }
@@ -44,10 +48,9 @@ input {
 }
 footer{
   display: flex;
-  padding: 1.0rem;
+  padding: 1.5rem;
   gap: 1.5rem;
   background-color: var(--sectionColor);
-  /* margin-top: 1.5rem; */
   align-items: flex-start;
 }
 footer .projectList{
@@ -407,7 +410,7 @@ display: block;
   }
   footer{
     flex-direction: column;
-    padding:0.7rem ;
+    padding:2.0rem ;
   }
   .containerMail{
     width: 100%;
