@@ -66,6 +66,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
     main.appendChild(projectElement);
   });
 
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-myproject');
+          observer.unobserve(entry.target); // Stop observing once faded in
+        }
+      });
+    });
+  
+    const fadeElements = document.querySelectorAll('.myProject');
+    fadeElements.forEach(element => {
+      observer.observe(element);
+    });
+
+
+
   function CreateHelper(project) {
     let projectImage = document.createElement("div");
     projectImage.className = "projectImage";
@@ -169,9 +185,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (toggle) {
         _projectInnerContainer4.classList.remove("hideContent");
         _projectInnerContainer3.classList.remove("hideContent");
+        viewMore.innerText = "View Less";
+
       } else {
         _projectInnerContainer4.classList.add("hideContent");
         _projectInnerContainer3.classList.add("hideContent");
+        viewMore.innerText = "View More";
       }
     });
 
