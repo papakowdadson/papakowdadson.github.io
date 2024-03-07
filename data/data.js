@@ -1,3 +1,4 @@
+// Not using this data, New data can be found in createProject.js
 const projectsData = [
   {
     title: "SalvageMe",

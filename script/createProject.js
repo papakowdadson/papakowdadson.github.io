@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       title: "Trofare",
       image: "./assets/imageicon/Trofare.jpeg",
       type: "Mobile",
-      description: "Trofare aims at digitizing public transportation in developing countries ( Africa ). \n At Trofare, we are building a smart public transport system that improve commuters’ productivity, reduce road congestion, reduce wait time, improve road safety and reduce pollution ( CO2 and CO emissions through ride sharing ).",
+      description: "Trofare aims at digitizing public transportation in developing countries ( Africa ). \n Trofare is developing an intelligent public transportation network aimed at enhancing commuters' efficiency, alleviating traffic congestion, minimizing wait times, enhancing road safety, and lowering pollution levels, particularly CO2 and CO emissions via ride-sharing.",
       appLink: {
         name: "Trofare",
         url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofare",
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       title: "SalvageMe",
       image: "./assets/imageicon/SalvageMeLanding.JPG",
       type: "Web",
-      description: "SalvageMe is a dedicated NGO focused on promoting literacy, education, and environmental conservation through its innovative approach.\n By collecting and redistributing new and gently used educational materials, including physical books and e-books, we aim to reduce the need for new book production, thus helping to conserve trees and mitigate carbon emissions associated with book production and disposal.",
+      description: "SalvageMe is a dedicated NGO focused on promoting literacy, education, and environmental conservation through its innovative approach.\n By collecting, refurbishing and redistributing new and gently used educational materials, including physical books and e-books, we aim to lower the rate of new book production, thus helping to conserve trees and mitigate carbon emissions associated with book production and disposal.",
       appLink: { name: "SalvageMe", url: "https://salvage-me.vercel.app/" },
       tools: ["React", "Nodejs"],
       otherLink: [
