@@ -2,7 +2,7 @@
 :root {
   --primaryColor: #0296e9;
   --backgroundColor: #0d0d0d;
-  --sectionColor: #1f1f1f;
+  --sectionColor: #1f1f1fb7;
   --tertiaryColor: #fffcfc;
   --secondaryColor: #676767;
   --contactusBackground: #222222;
@@ -22,9 +22,9 @@ textarea {
   border: none;
   color: var(--tertiaryColor);
 }
-textarea:focus{
+textarea:focus {
   outline: none !important;
-  border:2px solid var(--primaryColor);
+  border: 2px solid var(--primaryColor);
 }
 body {
   background-color: var(--backgroundColor);
@@ -46,18 +46,18 @@ input {
   border: none;
   color: var(--tertiaryColor);
 }
-footer{
+footer {
   display: flex;
   padding: 1.5rem;
   gap: 1.5rem;
   background-color: var(--sectionColor);
   align-items: flex-start;
 }
-footer .projectList{
+footer .projectList {
   gap: 40px;
 }
-a{
-  color:var(--primaryColor)
+a {
+  color: var(--primaryColor);
 }
 .header {
   font-size: 3.75em;
@@ -194,6 +194,17 @@ label {
   color: var(--primaryColor);
 }
 
+.myProjectBackground {
+  height: fit-content;
+  margin: 1.5rem 0px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+}
+
 .myProject {
   text-align: start;
   border-radius: 15px;
@@ -202,15 +213,16 @@ label {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 20px;
-  margin: 1.5rem 0px;
+  /* margin: 1.5rem 0px; */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: var(--sectionColor);
   height: fit-content;
-  box-shadow:inset 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+  /* box-shadow: inset 2px 2px 2px #00000080, 10px 1px 12px #00000080,
     2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
     inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080;
+    inset 2px 2px 10px #00000080; */
   overflow-x: hidden;
-
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -220,38 +232,38 @@ label {
 }
 .fade-in-myproject {
   opacity: 1;
-    transform: none;
-    visibility: visible;
-  }
+  transform: none;
+  visibility: visible;
+}
 
-.projectTitle{
+.projectTitle {
   font-size: 1.55em;
   font-weight: 500;
   transition: font-size 1.5s ease;
 }
 
-.myProject:hover .projectTitle{
+.myProject:hover .projectTitle {
   font-size: 2.55em;
 }
 
-.projectType{
+.projectType {
   padding: 15px 40px;
   border-radius: 15px;
   outline-color: none;
   margin-top: 0.5rem;
-  border: 2px dashed white ;
+  border: 2px dashed white;
   color: var(--tertiaryColor);
   width: fit-content;
 }
-.projectInnerContainer{
+.projectInnerContainer {
   margin-top: 0.5rem;
 }
-.projectToolItem{
+.projectToolItem {
   padding: 15px 40px;
   border-radius: 15px;
   outline-color: none;
   margin-top: 0.5rem;
-  border: 2px solid white ;
+  border: 2px solid white;
   color: var(--tertiaryColor);
   width: fit-content;
   display: flex;
@@ -259,32 +271,31 @@ label {
   justify-content: center;
   align-items: center;
 }
-.ligther{
+.ligther {
   border-radius: 50%;
   width: 20px;
   height: 20px;
   background-color: var(--primaryColor);
 }
-.projectOtherLinkItem{
+.projectOtherLinkItem {
   padding: 15px 40px;
   border-radius: 15px;
   outline-color: none;
   margin-top: 0.5rem;
-  border: 2px solid white ;
+  border: 2px solid white;
   color: var(--tertiaryColor);
   width: fit-content;
   background-color: var(--secondaryColor);
-  
 }
-.projectOtherLinkItem:hover a{
+.projectOtherLinkItem:hover a {
   color: var(--primaryColor);
 }
-.projectOtherLinkItem a{
+.projectOtherLinkItem a {
   color: var(--tertiaryColor);
   text-decoration: none;
 }
 
-.viewMore{
+.viewMore {
   display: none;
 }
 
@@ -297,17 +308,17 @@ label {
   align-items: flex-start;
   height: 100%;
 }
-.projectImage{
+.projectImage {
   border-radius: 15px;
   border: 5px solid var(--primaryColor);
-  margin:0px auto;
+  margin: 0px auto;
 }
-.imageWeb{
+.imageWeb {
   height: 250px;
   width: 600px;
 }
-.imageMobile{
-  width:300px ;
+.imageMobile {
+  width: 300px;
   height: 600px;
 }
 .contentContainer {
@@ -334,7 +345,7 @@ label {
   object-fit: fill;
   overflow: hidden;
 }
-.projectList{
+.projectList {
   text-align: start;
   flex: 2;
   display: flex;
@@ -358,8 +369,8 @@ label {
   font-weight: bold;
 }
 
-.hideContent{
-display: block;
+.hideContent {
+  display: block;
 }
 
 @keyframes animate {
@@ -391,49 +402,48 @@ display: block;
   }
 }
 
-@keyframes increaseSize{
-  
-  to{
+@keyframes increaseSize {
+  to {
     font-size: 2.5em;
-
   }
-
 }
 
 @media only screen and (max-width: 576px) {
   html {
     font-size: 14px;
   }
-  .myProject {
+  .myProjectBackground {
     margin: 1.5rem 0;
+  }
+  .myProject {
+    /* margin: 1.5rem 0; */
     flex-direction: column;
   }
-  footer{
+  footer {
     flex-direction: column;
-    padding:2.0rem ;
+    padding: 2rem;
   }
-  .containerMail{
+  .containerMail {
     width: 100%;
   }
-  .viewMore{
+  .viewMore {
     margin-top: 1.5rem;
     display: block;
     float: right;
     text-decoration: underline;
     color: var(--secondaryColor);
   }
-  .hideContent{
+  .hideContent {
     display: none;
   }
-  .imageWeb{
+  .imageWeb {
     height: 200px;
     width: 100%;
   }
-  .imageMobile{
-    width:300px ;
+  .imageMobile {
+    width: 300px;
     height: 600px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -452,10 +462,8 @@ display: block;
   html {
     font-size: 20px;
   }
-  .profileMain{
-    margin:0px auto ;
+  .profileMain {
+    margin: 0px auto;
     max-width: 1500px;
   }
-  
-
 }
