@@ -209,8 +209,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     projectContainer.appendChild(imageContainer);
     projectContainer.appendChild(_contentContainer);
+    
+    let projectBackgroundImageContainer = document.createElement("div");
+    projectBackgroundImageContainer.style.backgroundSize = "cover";
+    projectBackgroundImageContainer.style.backgroundRepeat = "no-repeat";
+    projectBackgroundImageContainer.style.backgroundImage = `url(${project.image})`;
+    projectBackgroundImageContainer.appendChild(projectContainer);
+    projectBackgroundImageContainer.className="myProjectBackground";
 
-    return projectContainer;
+
+
+
+    return projectBackgroundImageContainer;
   }
 
   function toolsHelper(tool) {
