@@ -365,6 +365,9 @@ label {
   display: flex;
   flex-direction: column;
 }
+#MailMessage::placeholder{
+ color: #ebeaea;
+}
 .sendMail {
   font-weight: bold;
 }
