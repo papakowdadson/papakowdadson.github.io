@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let projectLink = document.createElement("a");
     projectLink.className = "projectLink";
     projectLink.href = project.appLink.url;
-    projectLink.innerHTML = project.appLink.name;
+    projectLink.innerHTML = 'View Application';
 
     let _projectInnerContainer2 = document.createElement("div");
     _projectInnerContainer2.className = "projectInnerContainer";
