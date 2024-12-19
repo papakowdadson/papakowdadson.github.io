@@ -280,12 +280,18 @@ label {
 .projectOtherLinkItem {
   padding: 15px 40px;
   border-radius: 15px;
-  outline-color: none;
   margin-top: 0.5rem;
   border: 2px solid white;
   color: var(--tertiaryColor);
   width: fit-content;
+  overflow: hidden;
   background-color: var(--secondaryColor);
+}
+.projectOtherLinkItem:hover {
+  background: 
+  linear-gradient(var(--secondaryColor), var(--secondaryColor)) padding-box,
+  linear-gradient(90deg, white,  var(--primaryColor)) border-box;
+  border: 2px solid transparent;
 }
 .projectOtherLinkItem:hover a {
   color: var(--primaryColor);
