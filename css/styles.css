@@ -292,6 +292,7 @@ label {
   linear-gradient(var(--secondaryColor), var(--secondaryColor)) padding-box,
   linear-gradient(90deg, white,  var(--primaryColor)) border-box;
   border: 2px solid transparent;
+  transition: 0.5s ease;
 }
 .projectOtherLinkItem:hover a {
   color: var(--primaryColor);
