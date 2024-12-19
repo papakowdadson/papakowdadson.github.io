@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       tools: ["React", "Nodejs"],
       otherLink: [
         { name: "Ayoba", url: "www.google.com" },
-        { name: "Admin", url: "https://salvage-me-admin.vercel.app/" },
+        { name: "Dashboard", url: "https://salvage-me-admin.vercel.app/" },
       ],
     },
     {
@@ -56,6 +56,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       ],
     },
   ];
+  const langauageColors = ['#0296E9','#BB02E9','#E90202','#E94702','#14FD07','#02D9E9'] //Colors for language or framework used
 
 
   let main = document.querySelector(".profileMain");
@@ -100,7 +101,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     let projectType = document.createElement("div");
     projectType.className = "projectType";
-    projectType.innerHTML = project.type;
+    projectType.innerHTML = `${project.type} App`;
 
     let _contentHeader1 = document.createElement("p");
     _contentHeader1.className = "contentHeader";
@@ -120,10 +121,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
     _contentHeader2.className = "contentHeader";
     _contentHeader2.innerText = "Application Link";
 
+    let projectLinkVisitIcon = document.createElement("img");
+    projectLinkVisitIcon.src = "./assets/imageicon/visitLinkActive.png";
+    projectLinkVisitIcon.width=16
+
     let projectLink = document.createElement("a");
     projectLink.className = "projectLink";
     projectLink.href = project.appLink.url;
     projectLink.innerHTML = 'View Application';
+    projectLink.append(projectLinkVisitIcon)
 
     let _projectInnerContainer2 = document.createElement("div");
     _projectInnerContainer2.className = "projectInnerContainer";
@@ -135,7 +141,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     _contentHeader3.className = "contentHeader";
     _contentHeader3.innerText = "Tools:";
 
-    let projectListMapRes = project.tools.map((tool) => toolsHelper(tool));
+    let projectListMapRes = project.tools.map((tool,index) => toolsHelper(tool,index));
 
     let projectList1 = document.createElement("div");
     projectList1.className = "projectList";
@@ -223,9 +229,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     return projectBackgroundImageContainer;
   }
 
-  function toolsHelper(tool) {
+  function toolsHelper(tool,index) {
     let ligther = document.createElement("div");
     ligther.className = "ligther";
+    ligther.style.backgroundColor=langauageColors[index%6]
     let p = document.createElement("p");
     p.innerText = tool;
     let projectToolItem = document.createElement("div");
@@ -236,13 +243,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
   }
 
   function otherLinksHelper(other) {
-    let a = document.createElement("a");
-    a.href = other.url;
-    a.innerHTML = other.name;
+    let visitIcon = document.createElement("img");
+    visitIcon.src = "./assets/imageicon/visitLinkActive.png";
+    let link = document.createElement("a");
+    link.href = other.url;
+    link.innerHTML = other.name;
+    link.appendChild(visitIcon);
+    link.style.display='flex';
+    link.style.alignItems='center';
+    
 
     let projectOtherLinkItem = document.createElement("div");
     projectOtherLinkItem.className = "projectOtherLinkItem";
-    projectOtherLinkItem.appendChild(a);
+    projectOtherLinkItem.appendChild(link);
 
     return projectOtherLinkItem;
   }
