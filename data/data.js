@@ -57,7 +57,7 @@ export const projectsData = [
   },
   {
     title: "AyaPrep",
-    image: "./assets/imageicon/cAuth.JPG",
+    image: "./assets/imageicon/AyaPrep.JPG",
     type: "Mobile",
     description: "Teaching and learning app for students in local language.",
     appLink: { name: "AyaPrep", url: "https://play.google.com/store/apps/details?id=com.halikapps.ayaprep&pcampaignid=web_share" },

@@ -59,6 +59,47 @@ footer .projectList {
 a {
   color: var(--primaryColor);
 }
+.pageHeader{
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+}
+.headerContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--sectionColor);
+}
+.logo{
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.logoImage{
+  width: 42px;
+}
+.navDesktop > ul {
+  display: flex;
+  gap: 1.5rem; 
+}
+.navMobile{
+  display: none;
+}
+.navItem{
+  text-decoration: none;
+  color: var(--tertiaryColor);
+}
+.navItem:hover{
+  text-decoration: underline;
+  color:var(--primaryColor);
+  transition: color 0.5s ease;
+}
+
 .header {
   font-size: 3.75em;
   font-weight: bold;
@@ -279,10 +320,6 @@ label {
   -webkit-backdrop-filter: blur(10px);
   background-color: var(--sectionColor);
   height: fit-content;
-  /* box-shadow: inset 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080; */
   overflow-x: hidden;
   opacity: 0;
   transform: translateY(20vh);
@@ -371,8 +408,6 @@ label {
   flex: 1;
   min-width: 300px;
   display: flex;
-  /* margin: auto; */
-  /* justify-items: center; */
   align-items: flex-start;
   height: 100%;
 }
@@ -499,6 +534,51 @@ label {
   html {
     font-size: 14px;
   }
+  .pageHeader{
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 1rem;
+  }
+  .headerContainer{
+    border: 2px solid var(--tertiaryColor);
+    padding: 20px 15px;
+    border-radius: 30px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: var(--sectionColor);
+  }
+  .navDesktop{
+    display:none;
+  }
+  .navMobile{
+    display: block;
+  }
+  .navMobile > ul{
+    display: flex;
+    gap: 3.5rem;
+    justify-items: center;
+    align-items: center;
+    
+  }
+  .navItem{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .navItem img{
+    width: 24px;
+    height: 24px;
+  }
+  .profileMain > .intro {
+    margin-top: 1.0em;
+  }
   .myProjectBackground {
     margin: 1.5rem 0;
   }
@@ -508,7 +588,7 @@ label {
   }
   footer {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 2rem 130px 2rem;
   }
   .containerMail {
     width: 100%;
