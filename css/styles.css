@@ -107,6 +107,63 @@ label {
   margin: 2.5rem 0 0.2rem 0;
 }
 
+.otherProjectContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  text-align: center;
+}
+.otherProjectContainer > .tagline {
+  margin: 2.5rem 0;
+}
+.otherProjectContainer > .taglineHeader {
+  margin: 2.5rem 0 0.2rem 0;
+}
+.primaryProjectsContainer {
+  display: flex;
+  gap: 12px;
+}
+.secondaryProjectsContainer {
+  display: flex;
+  gap: 12px;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.mainCard {
+  width: 200px;
+  border-radius: 15px;
+  border: 2px solid #0072ff;
+  overflow: hidden;
+  height: 120px;
+  filter: grayscale(100%); /* Apply grayscale filter */
+  transition: filter 0.3s ease; /* Smooth transition */
+  position: relative;
+  animation: moveRightToLeft 30s linear infinite;
+}
+.mainCard:hover {
+  filter: none;
+  cursor: pointer;
+}
+.childCard {
+  border-radius: 60px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 15px;
+  position: relative;
+  background-clip: padding-box;
+  background-color: #000000;
+  background: linear-gradient(#000000, #000000)
+  padding-box,
+linear-gradient(to right, #666666, #000000) border-box;
+  animation: moveLeftToRight 20s linear infinite;
+}
+
+
+.childCard__title {
+  background: linear-gradient(to top, #666666, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .devto {
   margin-bottom: -0.2rem;
 }
@@ -288,10 +345,11 @@ label {
   background-color: var(--secondaryColor);
 }
 .projectOtherLinkItem:hover {
-  background: 
-  linear-gradient(var(--secondaryColor), var(--secondaryColor)) padding-box,
-  linear-gradient(90deg, white,  var(--primaryColor)) border-box;
+  background: linear-gradient(var(--secondaryColor), var(--secondaryColor))
+      padding-box,
+    linear-gradient(90deg, white, var(--primaryColor)) border-box;
   border: 2px solid transparent;
+  transition: 0.5s ease;
 }
 .projectOtherLinkItem:hover a {
   color: var(--primaryColor);
@@ -371,8 +429,8 @@ label {
   display: flex;
   flex-direction: column;
 }
-#MailMessage::placeholder{
- color: #ebeaea;
+#MailMessage::placeholder {
+  color: #ebeaea;
 }
 .sendMail {
   font-weight: bold;
@@ -414,6 +472,22 @@ label {
 @keyframes increaseSize {
   to {
     font-size: 2.5em;
+  }
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
   }
 }
 
