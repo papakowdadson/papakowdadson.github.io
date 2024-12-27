@@ -29,8 +29,42 @@
         <script type="module" src="./script/otherProject.js"></script>
 
     </head>
-    <body>    
-        <div class="profileMain">
+    <body>  
+        <header class="pageHeader">
+            <div class="headerContainer">
+                <!-- <div class="logo">
+                    <img src="AIMSFAVICON.png" alt="AIMSFAVICON" class="logoImage">
+                </div> -->
+                <div class="navDesktop">
+                    <ul>
+                        <li><a class="navItem" href="#profileMain">Profile</a></li>
+                        <li><a class="navItem" href="#otherProjectContainer">Projects</a></li>
+                        <li><a class="navItem" href="#footer">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="navMobile">
+                    <ul>
+                        <li><a class="navItem" href="#profileMain">
+                                <img src="./assets/icons/proicons_home.png" alt="" srcset="">
+                                <p>Profile</p>  
+                            </a>
+                        </li>
+                        <li><a class="navItem" href="#otherProjectContainer">
+                                <img src="./assets/icons/pajamas_project.png" alt="" srcset="">
+                                <p>Projects</p>  
+                            </a>
+                        </li>
+                        <li><a class="navItem" href="#footer">
+                                <img src="./assets/icons/mage_contact-book.png" alt="" srcset="">
+                                <p>Contact Me</p>  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>  
+        <div class="profileMain" id="profileMain">
             <div class="intro header">Hi, It's <span class="primaryColor">Dadson</span>... The guy on a journey to <span class="primaryColor">Software Engineering</span>!
             </div>
             <div class="tagline body">Software Developer | Mobile App | Web App | MERN | ML | Some Pleasant Surprises
@@ -49,11 +83,11 @@
 
         </div>
         
-        <div class="otherProjectContainer">
+        <div class="otherProjectContainer" id="otherProjectContainer">
             <p class="taglineHeader subHeader"> Other Projects</p>  
         </div>
         
-        <footer>
+        <footer id="footer">
                 <div class="projectList">
                     <div>
                         <p class="contentHeader">Me</p>
