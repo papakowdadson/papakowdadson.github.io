@@ -9,22 +9,22 @@ export const projectsData = [
       name: "Trofare",
       url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofare",
     },
-    tools: ["Flutter", "Nodejs", "MongoDb", "Firebase","Reactjs"],
+    tools: ["Flutter", "Nodejs-Express", "MongoDb", "Firebase","Reactjs"],
     otherLink: [
       {
-        name: "Trofare",
-        url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofare",
-      },
-      {
-        name: "Trofare Admin",
+        name: "Trofare Explorer",
         url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofareAdmin",
       },
       {
-        name: "Trofare Driver",
-        url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofare",
+        name: "Trofare Touter",
+        url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofareIntercity",
       },
       {
-        name: "Trofare Intercity",
+        name: "Trofare Driver",
+        url: "https://play.google.com/store/apps/details?id=com.trofare.trofaredriver",
+      },
+      {
+        name: "Trofare",
         url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofare",
       },
     ],
@@ -35,10 +35,10 @@ export const projectsData = [
     type: "Web",
     description: "SalvageMe is a dedicated NGO focused on promoting literacy, education, and environmental conservation through its innovative approach.\n By collecting, refurbishing and redistributing new and gently used educational materials, including physical books and e-books, we aim to lower the rate of new book production, thus helping to conserve trees and mitigate carbon emissions associated with book production and disposal.",
     appLink: { name: "SalvageMe", url: "https://salvage-me.vercel.app/" },
-    tools: ["React", "Nodejs"],
+    tools: ["React", "Nodejs-Express" ],
     otherLink: [
-      { name: "Ayoba", url: "www.google.com" },
       { name: "Dashboard", url: "https://salvage-me-admin.vercel.app/" },
+      { name: "Ayoba Deployment", url: "https://play.google.com/store/apps/details?id=com.ayoba.ayoba" },
     ],
   },
   {
@@ -47,7 +47,7 @@ export const projectsData = [
     type: "Web",
     description: "A Smart Contract for awarding government projects and payment.",
     appLink: { name: "C-Auth", url: "https://c-auth.vercel.app/" },
-    tools: ["React", "Nodejs", "Solidity"],
+    tools: ["React", "Nodejs-Express", "Solidity","Rest API"],
     otherLink: [
       {
         name: "C-Auth",
@@ -64,6 +64,10 @@ export const projectsData = [
     tools: ["Flutter"],
     otherLink: [
       {
+        name: "AyaPOKA",
+        url: "https://play.google.com/store/apps/details?id=com.ayaprep.ayapoka",
+      },
+      {
         name: "AyaPrep",
         url: "https://play.google.com/store/apps/details?id=com.halikapps.ayaprep&pcampaignid=web_share",
       },
@@ -71,12 +75,16 @@ export const projectsData = [
   },
   {
     title: "Blog API",
-    image: "./assets/imageicon/cAuth.JPG",
+    image: "./assets/imageicon/BlogAPI.JPG",
     type: "Web",
-    description: "To be updated",
+    description: "Simple Blog API for creating, reading, updating and deleting blog posts.",
     appLink: { name: "Blog API", url: "https://github.com/papakowdadson/slightly_Techie_Blog" },
-    tools: ["Express, SQL, MVC, Sentry"],
+    tools: ["Express, SQL, MVC"],
     otherLink: [
+      {
+        name: "Postman Documentation",
+        url: "https://documenter.getpostman.com/view/37346255/2sAYJ6CKk3",
+      },
       {
         name: "Blog API",
         url: "https://github.com/papakowdadson/slightly_Techie_Blog",
@@ -85,7 +93,7 @@ export const projectsData = [
   },
   {
     title: "Github Finder",
-    image: "./assets/imageicon/cAuth.JPG",
+    image: "./assets/imageicon/githubfinder.png",
     type: "Web",
     description: "Easily search for Github users and their repositories.",
     appLink: { name: "Github Finer", url: "https://githubfinder-mu.vercel.app/" },
@@ -99,35 +107,32 @@ export const projectsData = [
   },
   {
     title: "E-commerce API",
-    image: "./assets/imageicon/cAuth.JPG",
+    image: "./assets/imageicon/EcommerceAPI.JPG",
     type: "Web",
-    description: "To be updated",
-    appLink: { name: "Github Finer", url: "https://papakowdadson.github.io/" },
+    description: "Simple E-COMMERCE API for creating, reading, updating and deleting products.",
+    appLink: { name: "Github Finer", url: "https://documenter.getpostman.com/view/37346255/2sAYJ6CKk5" },
     tools: ["Express, REST, MVC"],
     otherLink: [
       {
-        name: "E-commerce API",
-        url: "https://papakowdadson.github.io/",
+        name: "Postman Documentation",
+        url: "https://documenter.getpostman.com/view/37346255/2sAYJ6CKk5",
       },
     ],
   },
   ,
   {
     title: "Muna Kalati",
-    image: "./assets/imageicon/cAuth.JPG",
+    image: "./assets/imageicon/MK.JPG",
     type: "Web",
     description: "Hub for African contents.",
-    appLink: { name: "MunaKalati", url: "https://publisher-portal-git-dev-munakalatis-projects.vercel.app/" },
+    appLink: { name: "MunaKalati", url: "https://publisher-portal-black.vercel.app/" },
     tools: ["Express, REST, Typescript, MongoDB"],
     otherLink: [
       {
         name: "Publishers Portal",
         url: "https://publisher-portal-black.vercel.app/",
       },
-      {
-        name: "Dashboard",
-        url: "https://papakowdadson.github.io/",
-      },
+      
     ],
   },
 ];
