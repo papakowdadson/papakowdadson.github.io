@@ -20,25 +20,32 @@ window.addEventListener("DOMContentLoaded",(event)=>{
     otherProjectContainer.appendChild(secondaryProjectsContainer);
 
 
-    //TODO: Main card helper
+    // Main card helper
     function mainCardHelper(project){
         let mainCard = document.createElement("div");
         mainCard.classList.add("mainCard");
         mainCard.style.backgroundSize = "cover";
         mainCard.style.backgroundRepeat = "no-repeat";
         mainCard.style.backgroundImage = `url(${project.image})`;
+        mainCard.addEventListener("click",()=>{
+            window.open(project.appLink.url,"_blank");
+        });
     
         return mainCard;
         }
 
 
-    //TODO: Child card helper
+    // Child card helper
     function childCardHelper(project){
         let childCard = document.createElement("div");
         childCard.classList.add("childCard");
         childCard.innerHTML = ` 
             <h3 class="childCard__title">${project.title}</h3>
         `
+        childCard.addEventListener("click",()=>{
+            window.open(project.appLink.url,"_blank");
+        });
+
         return childCard;
     }
 

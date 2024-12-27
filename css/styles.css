@@ -131,6 +131,7 @@ label {
 }
 .mainCard {
   width: 200px;
+  min-width: 200px;
   border-radius: 15px;
   border: 2px solid #0072ff;
   overflow: hidden;
@@ -145,6 +146,7 @@ label {
   cursor: pointer;
 }
 .childCard {
+  min-width: fit-content;
   border-radius: 60px;
   border: 2px solid transparent;
   cursor: pointer;
@@ -162,6 +164,7 @@ label {
 .childCard__title {
   background: linear-gradient(to top, #666666, #000000);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
