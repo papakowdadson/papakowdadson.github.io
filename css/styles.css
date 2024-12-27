@@ -112,6 +112,7 @@ label {
   flex-direction: column;
   padding: 0 1rem;
   text-align: center;
+  overflow: hidden;
 }
 .otherProjectContainer > .tagline {
   margin: 2.5rem 0;
@@ -153,7 +154,7 @@ label {
   background-color: #000000;
   background: linear-gradient(#000000, #000000)
   padding-box,
-linear-gradient(to right, #666666, #000000) border-box;
+  linear-gradient(to right, #666666, #000000) border-box;
   animation: moveLeftToRight 20s linear infinite;
 }
 

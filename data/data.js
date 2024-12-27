@@ -55,6 +55,81 @@ export const projectsData = [
       },
     ],
   },
+  {
+    title: "AyaPrep",
+    image: "./assets/imageicon/cAuth.JPG",
+    type: "Mobile",
+    description: "Teaching and learning app for students in local language.",
+    appLink: { name: "AyaPrep", url: "https://play.google.com/store/apps/details?id=com.halikapps.ayaprep&pcampaignid=web_share" },
+    tools: ["Flutter"],
+    otherLink: [
+      {
+        name: "AyaPrep",
+        url: "https://play.google.com/store/apps/details?id=com.halikapps.ayaprep&pcampaignid=web_share",
+      },
+    ],
+  },
+  {
+    title: "Blog API",
+    image: "./assets/imageicon/cAuth.JPG",
+    type: "Web",
+    description: "To be updated",
+    appLink: { name: "Blog API", url: "https://github.com/papakowdadson/slightly_Techie_Blog" },
+    tools: ["Express, SQL, MVC, Sentry"],
+    otherLink: [
+      {
+        name: "Blog API",
+        url: "https://github.com/papakowdadson/slightly_Techie_Blog",
+      },
+    ],
+  },
+  {
+    title: "Github Finder",
+    image: "./assets/imageicon/cAuth.JPG",
+    type: "Web",
+    description: "Easily search for Github users and their repositories.",
+    appLink: { name: "Github Finer", url: "https://githubfinder-mu.vercel.app/" },
+    tools: ["Express, React, GitHub API"],
+    otherLink: [
+      {
+        name: "Github Finder",
+        url: "https://githubfinder-mu.vercel.app/",
+      },
+    ],
+  },
+  {
+    title: "E-commerce API",
+    image: "./assets/imageicon/cAuth.JPG",
+    type: "Web",
+    description: "To be updated",
+    appLink: { name: "Github Finer", url: "https://papakowdadson.github.io/" },
+    tools: ["Express, REST, MVC"],
+    otherLink: [
+      {
+        name: "E-commerce API",
+        url: "https://papakowdadson.github.io/",
+      },
+    ],
+  },
+  ,
+  {
+    title: "Muna Kalati",
+    image: "./assets/imageicon/cAuth.JPG",
+    type: "Web",
+    description: "Hub for African contents.",
+    appLink: { name: "MunaKalati", url: "https://publisher-portal-git-dev-munakalatis-projects.vercel.app/" },
+    tools: ["Express, REST, Typescript, MongoDB"],
+    otherLink: [
+      {
+        name: "Publishers Portal",
+        url: "https://publisher-portal-black.vercel.app/",
+      },
+      {
+        name: "Dashboard",
+        url: "https://papakowdadson.github.io/",
+      },
+    ],
+  },
 ];
 
 
