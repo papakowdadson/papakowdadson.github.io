@@ -1,4 +1,6 @@
+// For Creating Top projects in main profile
 window.addEventListener("DOMContentLoaded", (event) => {
+  //Data of all Projects
   const projectsData = [
     {
       title: "Trofare",
@@ -56,6 +58,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       ],
     },
   ];
+  
   const langauageColors = ['#0296E9','#BB02E9','#E90202','#E94702','#14FD07','#02D9E9'] //Colors for language or framework used
 
 
