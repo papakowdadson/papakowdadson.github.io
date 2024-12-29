@@ -141,6 +141,15 @@ label {
   margin-top: 1.5em;
 }
 
+.typwriterContainer {
+  display: inline-block;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  /* text-align: left; */
+  /* border-right: 0.15em solid white;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; */
+}
+
 .profileMain > .tagline {
   margin: 2.5rem 0;
 }
@@ -164,6 +173,7 @@ label {
 .primaryProjectsContainer {
   display: flex;
   gap: 12px;
+  margin-top: 1.5rem;
 }
 .secondaryProjectsContainer {
   display: flex;
@@ -479,6 +489,16 @@ label {
   display: block;
 }
 
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
 @keyframes animate {
   from {
     filter: hue-rotate(0deg);
@@ -587,7 +607,7 @@ label {
     flex-direction: column;
   }
   footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 2rem 2rem 130px 2rem;
   }
   .containerMail {
