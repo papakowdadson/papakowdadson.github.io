@@ -135,6 +135,22 @@ export const projectsData = [
       
     ],
   },
+  {
+    title: "MTN MoMo STK",
+    image: "./assets/imageicon/MomoSTK.JPG",
+    type: "Web",
+    description: "Package for easier MTN MoMo integration.",
+    appLink: { name: "MTN MoMo STK", url: "https://www.npmjs.com/package/dadson-momo-stk" },
+    tools: ["Express, REST API"],
+    otherLink: [
+      {
+        name: "NPM",
+        url: "https://www.npmjs.com/package/dadson-momo-stk",
+      },
+      
+    ],
+  },
+  
 ];
 
 
