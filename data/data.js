@@ -4,7 +4,7 @@ export const projectsData = [
     title: "Trofare",
     image: "./assets/imageicon/Trofare.jpeg",
     type: "Mobile",
-    description: "Trofare aims at digitizing public transportation in developing countries ( Africa ). \n Trofare is developing an intelligent public transportation network aimed at enhancing commuters' efficiency, alleviating traffic congestion, minimizing wait times, enhancing road safety, and lowering pollution levels, particularly CO2 and CO emissions via ride-sharing.",
+    description: "Trofare is a smart paratransit system digitizing informal public transportation in developing countries ( Africa ). \n Introducing an intelligent public transportation network aimed at enhancing commuters' efficiency, alleviating traffic congestion, minimizing wait times, enhancing road safety, and lowering pollution levels, particularly CO2 and CO emissions via ride-sharing.",
     appLink: {
       name: "Trofare",
       url: "https://play.google.com/store/apps/details?id=com.aimscommunity.trofare",
@@ -35,7 +35,7 @@ export const projectsData = [
     type: "Web",
     description: "SalvageMe is a dedicated NGO focused on promoting literacy, education, and environmental conservation through its innovative approach.\n By collecting, refurbishing and redistributing new and gently used educational materials, including physical books and e-books, we aim to lower the rate of new book production, thus helping to conserve trees and mitigate carbon emissions associated with book production and disposal.",
     appLink: { name: "SalvageMe", url: "https://salvage-me.vercel.app/" },
-    tools: ["React", "Nodejs-Express" ],
+    tools: ["Reactjs", "Nodejs-Express" ],
     otherLink: [
       { name: "Dashboard", url: "https://salvage-me-admin.vercel.app/" },
       { name: "Ayoba Deployment", url: "https://play.google.com/store/apps/details?id=com.ayoba.ayoba" },
@@ -44,10 +44,10 @@ export const projectsData = [
   {
     title: "C-Auth",
     image: "./assets/imageicon/cAuth.JPG",
-    type: "Web",
+    type: "Web3",
     description: "A Smart Contract for awarding government projects and payment.",
     appLink: { name: "C-Auth", url: "https://c-auth.vercel.app/" },
-    tools: ["React", "Nodejs-Express", "Solidity","Rest API"],
+    tools: ["Reactjs", "Nodejs-Express", "Solidity","Rest API","Blockchain"],
     otherLink: [
       {
         name: "C-Auth",
@@ -79,7 +79,7 @@ export const projectsData = [
     type: "Web",
     description: "Simple Blog API for creating, reading, updating and deleting blog posts.",
     appLink: { name: "Blog API", url: "https://github.com/papakowdadson/slightly_Techie_Blog" },
-    tools: ["Express, SQL, MVC"],
+    tools: ["Nodejs-Express", "SQL", "MVC"],
     otherLink: [
       {
         name: "Postman Documentation",
@@ -97,7 +97,7 @@ export const projectsData = [
     type: "Web",
     description: "Easily search for Github users and their repositories.",
     appLink: { name: "Github Finer", url: "https://githubfinder-mu.vercel.app/" },
-    tools: ["Express, React, GitHub API"],
+    tools: ["Nodejs-Express", "Reactjs", "GitHub API"],
     otherLink: [
       {
         name: "Github Finder",
@@ -111,7 +111,7 @@ export const projectsData = [
     type: "Web",
     description: "Simple E-COMMERCE API for creating, reading, updating and deleting products.",
     appLink: { name: "Github Finer", url: "https://documenter.getpostman.com/view/37346255/2sAYJ6CKk5" },
-    tools: ["Express, REST, MVC"],
+    tools: ["Nodejs-Express", "REST API", "MVC"],
     otherLink: [
       {
         name: "Postman Documentation",
@@ -126,7 +126,7 @@ export const projectsData = [
     type: "Web",
     description: "Hub for African contents.",
     appLink: { name: "MunaKalati", url: "https://publisher-portal-black.vercel.app/" },
-    tools: ["Express, REST, Typescript, MongoDB"],
+    tools: ["Nodejs-Express", "REST API", "Typescript", "MongoDB"],
     otherLink: [
       {
         name: "Publishers Portal",
@@ -141,7 +141,7 @@ export const projectsData = [
     type: "Web",
     description: "Package for easier MTN MoMo integration.",
     appLink: { name: "MTN MoMo STK", url: "https://www.npmjs.com/package/dadson-momo-stk" },
-    tools: ["Express, REST API"],
+    tools: ["Nodejs-Express", "REST API"],
     otherLink: [
       {
         name: "NPM",
