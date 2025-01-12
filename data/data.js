@@ -45,7 +45,7 @@ export const projectsData = [
     title: "C-Auth",
     image: "./assets/imageicon/cAuth.JPG",
     type: "Web3",
-    description: "A Smart Contract for awarding government projects and payment.",
+    description: "A Smart Contract for awarding government projects and payment. \n Billions of dollars in state funds are lost to ghost and uncompleted projects. I implemented a blockchain network to allow citizens to verify projects and confirm the release of funds to contractors.",
     appLink: { name: "C-Auth", url: "https://c-auth.vercel.app/" },
     tools: ["Reactjs", "Nodejs-Express", "Solidity","Rest API","Blockchain"],
     otherLink: [

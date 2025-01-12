@@ -133,6 +133,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let projectLink = document.createElement("a");
     projectLink.className = "projectLink";
     projectLink.href = project.appLink.url;
+    projectLink.target = "_blank";
     projectLink.innerHTML = 'View Application';
     projectLink.append(projectLinkVisitIcon)
 
@@ -252,6 +253,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     visitIcon.src = "./assets/imageicon/visitLinkActive.png";
     let link = document.createElement("a");
     link.href = other.url;
+    link.target = "_blank";
     link.innerHTML = other.name;
     link.appendChild(visitIcon);
     link.style.display='flex';
