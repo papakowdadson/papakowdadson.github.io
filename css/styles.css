@@ -28,6 +28,10 @@ textarea:focus {
 }
 body {
   background-color: var(--backgroundColor);
+  background-image: url("../bgimage.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 button {
   padding: 20px 40px;
@@ -59,44 +63,76 @@ footer .projectList {
 a {
   color: var(--primaryColor);
 }
-.pageHeader{
+.pageHeader {
   position: sticky;
   top: 0;
   z-index: 9999999;
 }
-.headerContainer{
+.headerContainer {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
-  padding: 10px 1rem;
+  padding: 15px 1rem;
   text-align: center;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background-color: var(--sectionColor);
 }
-.logo{
+.logo {
   background-color: white;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: flex;
+  margin: auto;
 }
-.logoImage{
-  width: 42px;
+.logoImage {
+  width: 48px;
+  height: 48px;
+}
+.navDesktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .navDesktop > ul {
   display: flex;
-  gap: 1.5rem; 
+  gap: 1.5rem;
 }
-.navMobile{
+.pseudoButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--tertiaryColor);
+  text-decoration: none;
+}
+.navDesktopLeading {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.navDesktopAction {
+  display: flex;
+  gap: 10px;
+}
+.navDesktopAction .pseudoButton:nth-child(2) {
+  background-color: var(--tertiaryColor);
+  color: var(--backgroundColor);
+}
+
+.navMobile {
   display: none;
 }
-.navItem{
+.navItem {
   text-decoration: none;
   color: var(--tertiaryColor);
 }
-.navItem:hover{
+.navItem:hover {
   text-decoration: underline;
-  color:var(--primaryColor);
+  color: var(--primaryColor);
   transition: color 0.5s ease;
 }
 
@@ -119,7 +155,10 @@ label {
   font-size: 1.55em;
   font-weight: 500;
 }
-
+.icons-social {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .icons-social i {
   font-size: 3em;
   padding: 10px;
@@ -157,12 +196,89 @@ label {
   margin: 2.5rem 0 0.2rem 0;
 }
 
+.explore-my-work {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+.explore-my-work > .pseudoButton {
+  padding: 10px 40px;
+}
+
+.eventsContainer {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+  display: flex;
+  overflow-y: hidden;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.eventContainer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  justify-content: end;
+  align-items: baseline;
+  padding: 5px;
+  background-color: #222222;
+  background-blend-mode: multiply;
+  transition: all 0.6s ease;
+}
+.eventContainer:hover {
+  background-blend-mode: normal;
+  height: 500px;
+  width: 500px;
+}
+.eventTitle {
+  font-size: 1.55em;
+  font-weight: 500;
+  text-align: start;
+}
+.eventDescription {
+  text-align: start;
+}
+.eventLink {
+  background-color: var(--tertiaryColor);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.eventFooterContiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.workExperienceContainer {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.workExperienceItemContainer {
+  text-align: start;
+  display: flex;
+  gap: 5px;
+}
+
 .otherProjectContainer {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 2.5rem;
 }
 .otherProjectContainer > .tagline {
   margin: 2.5rem 0;
@@ -205,12 +321,10 @@ label {
   position: relative;
   background-clip: padding-box;
   background-color: #000000;
-  background: linear-gradient(#000000, #000000)
-  padding-box,
-  linear-gradient(to right, #666666, #000000) border-box;
+  background: linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(to right, #666666, #000000) border-box;
   animation: moveLeftToRight 20s linear infinite;
 }
-
 
 .childCard__title {
   background: linear-gradient(to top, #666666, #000000);
@@ -490,13 +604,22 @@ label {
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: white; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
 
 @keyframes animate {
@@ -554,7 +677,7 @@ label {
   html {
     font-size: 14px;
   }
-  .pageHeader{
+  .pageHeader {
     position: fixed;
     bottom: 0;
     top: auto;
@@ -563,7 +686,7 @@ label {
     justify-content: space-around;
     padding: 10px 1rem;
   }
-  .headerContainer{
+  .headerContainer {
     border: 2px solid var(--tertiaryColor);
     padding: 20px 15px;
     border-radius: 30px;
@@ -572,32 +695,32 @@ label {
     -webkit-backdrop-filter: blur(10px);
     background-color: var(--sectionColor);
   }
-  .navDesktop{
-    display:none;
+  .navDesktop {
+    display: none;
   }
-  .navMobile{
+  .navMobile {
     display: block;
+    width: 100%;
   }
-  .navMobile > ul{
+  .navMobile > ul {
     display: flex;
-    gap: 3.5rem;
     justify-items: center;
     align-items: center;
-    
+    justify-content: space-between;
   }
-  .navItem{
+  .navItem {
     display: flex;
     gap: 2px;
     flex-direction: column;
     justify-items: center;
     align-items: center;
   }
-  .navItem img{
+  .navItem img {
     width: 24px;
     height: 24px;
   }
   .profileMain > .intro {
-    margin-top: 1.0em;
+    margin-top: 1em;
   }
   .myProjectBackground {
     margin: 1.5rem 0;
@@ -606,6 +729,13 @@ label {
     /* margin: 1.5rem 0; */
     flex-direction: column;
   }
+  .explore-my-work {
+    display: none;
+  }
+  .eventsContainer {
+    display: none;
+  }
+
   footer {
     flex-direction: column-reverse;
     padding: 2rem 2rem 130px 2rem;
