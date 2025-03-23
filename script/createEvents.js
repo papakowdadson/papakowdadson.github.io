@@ -12,16 +12,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 function CreateHelper(event) {
     let eventContainer = document.createElement("div");
     eventContainer.className = "eventContainer";
+    eventContainer.style.backgroundImage = `url(${event.image})`;
     
-    let eventImage = document.createElement("div");
-    eventImage.className = "eventImage";
-    eventImage.style.backgroundSize = "cover";
-    eventImage.style.backgroundRepeat = "no-repeat";
-    eventImage.style.backgroundImage = `url(${event.image})`;
-    
-    let imageContainer = document.createElement("div");
-    imageContainer.className = "imageContainer";
-    imageContainer.appendChild(eventImage);
     
     let eventTitle = document.createElement("p");
     eventTitle.className = "eventTitle";
@@ -31,21 +23,23 @@ function CreateHelper(event) {
     eventDescription.className = "eventDescription";
     eventDescription.innerText = event.description;
     
-    let eventDate = document.createElement("p");
-    eventDate.className = "eventDate";
-    eventDate.innerText = event.date;
-    
     let eventLink = document.createElement("a");
     eventLink.className = "eventLink";
-    eventLink.innerText = "More Info";
     eventLink.href = event.link;
     eventLink.target = "_blank";
+
+    let eventLinkIcon = document.createElement("img");
+    eventLinkIcon.src = "./assets/icons/solar_play-bold.png";
+
+    eventLink.appendChild(eventLinkIcon);
+
+    let eventFooterContiner = document.createElement("div");
+    eventFooterContiner.className = "eventFooterContiner";
+    eventFooterContiner.appendChild(eventDescription);
+    event.contentType==='video'&&eventFooterContiner.appendChild(eventLink);
     
-    eventContainer.appendChild(imageContainer);
     eventContainer.appendChild(eventTitle);
-    eventContainer.appendChild(eventDescription);
-    eventContainer.appendChild(eventDate);
-    eventContainer.appendChild(eventLink);
+    eventContainer.appendChild(eventFooterContiner);
     
     return eventContainer;
 }

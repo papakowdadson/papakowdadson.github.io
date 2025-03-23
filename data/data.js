@@ -1,4 +1,3 @@
-// Not using this data, New data can be found in createProject.js
 export const projectsData = [
   {
     title: "Trofare",
@@ -180,26 +179,34 @@ export const eventsData = [
   {
     title: "Flutter Ghana Meetup",
     contentType: "video",
-    image: "./assets/imageEvent/TrofareFlutterGhana.jpeg",
+    image: "./assets/imageEvents/TrofareFlutterGhana.jpeg",
     description: "Trofare presentation.",
     date: "2022-09-10",
-    link: "https://flutterwave.com/hackathon",
+    link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
   {
     title: "SalvageMe Donation",
     contentType: "image",
-    image: "./assets/imageEvent/SalvagemeKapioto.JPG",
+    image: "./assets/imageEvents/SalvagemeKapioto.JPG",
     description: "Educational materials donation at kapioto.",
     date: "2024-09-10",
-    link: "https://flutterwave.com/hackathon",
+    link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
   {
     title: "Tech Stars Africa",
     contentType: "image",
-    image: "./assets/imageEvent/TechstarHub.png",
+    image: "./assets/imageEvents/TechstarHub.png",
     description: "Meetup and Demo Day.",
     date: "2022-09-10",
-    link: "https://flutterwave.com/hackathon",
+    link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
+  },
+  {
+    title: "Treck Innovation Challenge",
+    contentType: "image",
+    image: "./assets/imageEvents/TrofareTreck.jpeg",
+    description: "Sustainable Mobilty.",
+    date: "2022-09-10",
+    link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
 ];
 
@@ -208,30 +215,22 @@ export const workExperiences = [
     position: "Application and Software Maintenance Engineer",
     achievements: [
       {
-        achievement: "Built Stars",
+        achievement: "Increased customer satisfaction by 15% through intense user acceptance test (UAT) - G-Money.",
       },
       {
-        achievement: "Built Stars",
+        achievement: "Monitored, resolved and reported infrastructure alarms achieving high availability - G-Money.                                     ",
+      },
+      {
+        achievement: "Collaborated with cross-functional teams to gather requirements and develop a digital catering system for over 30 million users - MTN Momo Food.",
+      },
+      {
+        achievement: "Achieved zero downtime with data center infrastructure upgrade - Vodafone Cash.",
       },
     ],
-    startTime: "2022-22",
-    EndTime: "Present",
+    startTime: "2022-11",
+    endTime: "Present",
     company: "Huawei Technologies",
     employmentType: "Full-Time",
   },
-  {
-    position: "Application and Software Maintenance Engineer",
-    achievements: [
-      {
-        achievement: "Built Stars",
-      },
-      {
-        achievement: "Built Stars",
-      },
-    ],
-    startTime: "2022-22",
-    EndTime: "Present",
-    company: "Huawei Technologies",
-    employmentType: "Full-Time",
-  },
+ 
 ];
