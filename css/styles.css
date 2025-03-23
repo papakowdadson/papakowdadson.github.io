@@ -28,6 +28,10 @@ textarea:focus {
 }
 body {
   background-color: var(--backgroundColor);
+  background-image: url('../bgimage.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 button {
   padding: 20px 40px;
@@ -66,9 +70,9 @@ a {
 }
 .headerContainer{
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
-  padding: 10px 1rem;
+  padding: 15px 1rem;
   text-align: center;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -79,14 +83,46 @@ a {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: flex;
+  margin: auto;
 }
 .logoImage{
-  width: 42px;
+  width: 48px;
+  height: 48px;
+}
+.navDesktop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .navDesktop > ul {
   display: flex;
   gap: 1.5rem; 
 }
+.pseudoButton{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--tertiaryColor);
+  text-decoration: none;
+}
+.navDesktopLeading{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.navDesktopAction{
+  display: flex;
+  gap: 10px;
+}
+.navDesktopAction .pseudoButton:nth-child(2){
+background-color: var(--tertiaryColor);
+color: var(--backgroundColor);
+}
+
 .navMobile{
   display: none;
 }
@@ -119,7 +155,10 @@ label {
   font-size: 1.55em;
   font-weight: 500;
 }
-
+.icons-social{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .icons-social i {
   font-size: 3em;
   padding: 10px;
@@ -157,12 +196,34 @@ label {
   margin: 2.5rem 0 0.2rem 0;
 }
 
+.explore-my-work{
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+.explore-my-work > .pseudoButton{
+  padding: 10px 40px;
+
+}
+
+.eventsContainer{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+}
+
+.workExperienceContainer{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .otherProjectContainer {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 2.5rem;
 }
 .otherProjectContainer > .tagline {
   margin: 2.5rem 0;
@@ -577,12 +638,13 @@ label {
   }
   .navMobile{
     display: block;
+    width: 100%;
   }
   .navMobile > ul{
     display: flex;
-    gap: 3.5rem;
     justify-items: center;
     align-items: center;
+    justify-content: space-between;
     
   }
   .navItem{
@@ -606,6 +668,14 @@ label {
     /* margin: 1.5rem 0; */
     flex-direction: column;
   }
+  .explore-my-work{
+    display: none;
+  }
+  .eventsContainer{
+    display: none;
+  }
+
+
   footer {
     flex-direction: column-reverse;
     padding: 2rem 2rem 130px 2rem;
