@@ -104,12 +104,46 @@ export const projectsData = [
     ],
   },
   {
+    title: "AudioPhile",
+    image: "./assets/imageicon/audiophile.png",
+    type: "Web",
+    description: "Ecommerce for audio accessories.",
+    appLink: {
+      name: "AudioPhile",
+      url: "https://audio-phile-ecommerce-website.vercel.app/",
+    },
+    tools: ["Nodejs-Express", "Reactjs"],
+    otherLink: [
+      {
+        name: "AudioPhile",
+        url: "https://audio-phile-ecommerce-website.vercel.app/",
+      },
+    ],
+  },
+  {
+    title: "TMP",
+    image: "./assets/imageicon/tmp.png",
+    type: "Web",
+    description: "Donate to support missionary work.",
+    appLink: {
+      name: "TMP",
+      url: "https://www.missionariespurse.com/",
+    },
+    tools: ["Nodejs-Express", "Reactjs", "Paystack"],
+    otherLink: [
+      {
+        name: "TMP",
+        url: "https://www.missionariespurse.com/",
+      },
+    ],
+  },
+  {
     title: "Github Finder",
     image: "./assets/imageicon/githubfinder.png",
     type: "Web",
     description: "Easily search for Github users and their repositories.",
     appLink: {
-      name: "Github Finer",
+      name: "Github Finder",
       url: "https://githubfinder-mu.vercel.app/",
     },
     tools: ["Nodejs-Express", "Reactjs", "GitHub API"],
@@ -138,7 +172,6 @@ export const projectsData = [
       },
     ],
   },
-  ,
   {
     title: "Muna Kalati",
     image: "./assets/imageicon/MK.JPG",
@@ -146,13 +179,13 @@ export const projectsData = [
     description: "Hub for African contents.",
     appLink: {
       name: "MunaKalati",
-      url: "https://publisher-portal-black.vercel.app/",
+      url: "https://play.google.com/store/apps/details?id=com.munakalati.app",
     },
     tools: ["Nodejs-Express", "REST API", "Typescript", "MongoDB"],
     otherLink: [
       {
         name: "Publishers Portal",
-        url: "https://publisher-portal-black.vercel.app/",
+        url: "https://play.google.com/store/apps/details?id=com.munakalati.app",
       },
     ],
   },
@@ -215,10 +248,16 @@ export const workExperiences = [
     position: "Application and Software Maintenance Engineer",
     achievements: [
       {
+        achievement: "Supported bill run (offline charging), mediation, provision, PRM, AAA and IMS integration - Telecel CBS.",
+      },
+      {
+        achievement: "Monitored, resolved and reported infrastructure alarms achieving high availability - G-Money & Telecel CBS.",
+      },
+      {
         achievement: "Increased customer satisfaction by 15% through intense user acceptance test (UAT) - G-Money.",
       },
       {
-        achievement: "Monitored, resolved and reported infrastructure alarms achieving high availability - G-Money.                                     ",
+        achievement: "Achieved high system availability by optimising table spaces of the Oracle database - G-Money.",
       },
       {
         achievement: "Collaborated with cross-functional teams to gather requirements and develop a digital catering system for over 30 million users - MTN Momo Food.",
