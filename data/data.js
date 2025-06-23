@@ -121,12 +121,29 @@ export const projectsData = [
     ],
   },
   {
+    title: "TMP",
+    image: "./assets/imageicon/tmp.png",
+    type: "Web",
+    description: "Donate to support missionary work.",
+    appLink: {
+      name: "TMP",
+      url: "https://www.missionariespurse.com/",
+    },
+    tools: ["Nodejs-Express", "Reactjs", "Paystack"],
+    otherLink: [
+      {
+        name: "TMP",
+        url: "https://www.missionariespurse.com/",
+      },
+    ],
+  },
+  {
     title: "Github Finder",
     image: "./assets/imageicon/githubfinder.png",
     type: "Web",
     description: "Easily search for Github users and their repositories.",
     appLink: {
-      name: "Github Finer",
+      name: "Github Finder",
       url: "https://githubfinder-mu.vercel.app/",
     },
     tools: ["Nodejs-Express", "Reactjs", "GitHub API"],
