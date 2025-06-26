@@ -1,7 +1,7 @@
 // For creating sliding moving project
 import {projectsData} from "../data/data.js";
 window.addEventListener("DOMContentLoaded",(event)=>{
-    const projectData = projectsData;
+    const projectData = projectsData.reverse();
 
     let otherProjectContainer = document.querySelector(".otherProjectContainer");
     let primaryProjectsContainer = document.createElement("div");

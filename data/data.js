@@ -104,23 +104,6 @@ export const projectsData = [
     ],
   },
   {
-    title: "AudioPhile",
-    image: "./assets/imageicon/audiophile.png",
-    type: "Web",
-    description: "Ecommerce for audio accessories.",
-    appLink: {
-      name: "AudioPhile",
-      url: "https://audio-phile-ecommerce-website.vercel.app/",
-    },
-    tools: ["Nodejs-Express", "Reactjs"],
-    otherLink: [
-      {
-        name: "AudioPhile",
-        url: "https://audio-phile-ecommerce-website.vercel.app/",
-      },
-    ],
-  },
-  {
     title: "TMP",
     image: "./assets/imageicon/tmp.png",
     type: "Web",
@@ -206,6 +189,23 @@ export const projectsData = [
       },
     ],
   },
+  {
+    title: "AudioPhile",
+    image: "./assets/imageicon/audiophile.png",
+    type: "Web",
+    description: "Ecommerce for audio accessories.",
+    appLink: {
+      name: "AudioPhile",
+      url: "https://audio-phile-ecommerce-website.vercel.app/",
+    },
+    tools: ["Nodejs-Express", "Reactjs"],
+    otherLink: [
+      {
+        name: "AudioPhile",
+        url: "https://audio-phile-ecommerce-website.vercel.app/",
+      },
+    ],
+  },
 ];
 
 export const eventsData = [
@@ -245,7 +245,7 @@ export const eventsData = [
 
 export const workExperiences = [
   {
-    position: "Application and Software Maintenance Engineer",
+    position: "Application and Software Engineer",
     achievements: [
       {
         achievement: "Supported bill run (offline charging), mediation, provision, PRM, AAA and IMS integration - Telecel CBS.",

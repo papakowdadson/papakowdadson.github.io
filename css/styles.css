@@ -290,11 +290,20 @@ label {
   display: flex;
   gap: 12px;
   margin-top: 1.5rem;
+  animation: moveRightToLeft 30s linear infinite;
+}
+.primaryProjectsContainer:hover {
+  animation-play-state: paused !important;
 }
 .secondaryProjectsContainer {
   display: flex;
   gap: 12px;
   margin: 0.5rem 0 0.5rem 0;
+  animation: moveLeftToRight 20s linear infinite;
+
+}
+.secondaryProjectsContainer:hover {
+  animation-play-state: paused !important;
 }
 .mainCard {
   width: 200px;
@@ -306,7 +315,7 @@ label {
   filter: grayscale(100%); /* Apply grayscale filter */
   transition: filter 0.3s ease; /* Smooth transition */
   position: relative;
-  animation: moveRightToLeft 30s linear infinite;
+
 }
 .mainCard:hover {
   filter: none;
@@ -323,7 +332,15 @@ label {
   background-color: #000000;
   background: linear-gradient(#000000, #000000) padding-box,
     linear-gradient(to right, #666666, #000000) border-box;
-  animation: moveLeftToRight 20s linear infinite;
+}
+.childCard:hover {
+  background: linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(to right, #0072ff, #000000) border-box;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.childCard:hover > .childCard__title {
+    -webkit-text-fill-color: var(--tertiaryColor) ;
 }
 
 .childCard__title {
@@ -761,6 +778,14 @@ label {
     width: 300px;
     height: 600px;
   }
+  @keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-330vw);
+  }
+ }
 }
 
 @media (min-width: 768px) {
