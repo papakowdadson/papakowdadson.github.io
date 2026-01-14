@@ -245,6 +245,24 @@ export const eventsData = [
 
 export const workExperiences = [
   {
+    position: "IT Business Analyst",
+    achievements: [
+      {
+        achievement: "Translated complex business requirements into detailed technical specifications, including user stories, process flows, and technical documentation, ensuring alignment with MTN Group standards.",
+      },
+      {
+        achievement: "Analyzed and documented APIs for clear communication between development and business teams.",
+      },
+      {
+        achievement: "Engineered solutions from User Requirements Specifications (URS) and Project Concept Documents (PCD).",
+      },
+    ],
+    startTime: "2025-08",
+    endTime: "present",
+    company: "Comviva",
+    employmentType: "Contract",
+  },
+  {
     position: "Application and Software Engineer",
     achievements: [
       {
@@ -267,7 +285,7 @@ export const workExperiences = [
       },
     ],
     startTime: "2022-11",
-    endTime: "Present",
+    endTime: "2025-08",
     company: "Huawei Technologies",
     employmentType: "Full-Time",
   },
