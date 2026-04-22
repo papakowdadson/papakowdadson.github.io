@@ -248,13 +248,13 @@ export const workExperiences = [
     position: "IT Business Analyst",
     achievements: [
       {
-        achievement: "Translated complex business requirements into detailed technical specifications, including user stories, process flows, and technical documentation, ensuring alignment with MTN Group standards.",
+        achievement: "Translated complex business requirements into detailed technical specifications, including user stories, process flows, and technical documentation, ensuring alignment with MTN Fintech Group standards."
       },
       {
-        achievement: "Analyzed and documented APIs for clear communication between development and business teams.",
+        achievement: "Leveraged technical skills in analyzing and documenting APIs for clear communication between development and business teams during third party integrations."
       },
       {
-        achievement: "Engineered solutions from User Requirements Specifications (URS) and Project Concept Documents (PCD).",
+        achievement: "Engineered solutions from User Requirements Specifications (URS) and Project Concept Documents (PCD) for MoMo Consumer App.",
       },
     ],
     startTime: "2025-08",
@@ -272,7 +272,7 @@ export const workExperiences = [
         achievement: "Monitored, resolved and reported infrastructure alarms achieving high availability - G-Money & Telecel CBS.",
       },
       {
-        achievement: "Increased customer satisfaction by 15% through intense user acceptance test (UAT) - G-Money.",
+        achievement: "Increased customer satisfaction by 15% through streamlined product configurations and intense user acceptance test (UAT) - G-Money.",
       },
       {
         achievement: "Achieved high system availability by optimising table spaces of the Oracle database - G-Money.",
@@ -281,7 +281,7 @@ export const workExperiences = [
         achievement: "Collaborated with cross-functional teams to gather requirements and develop a digital catering system for over 30 million users - MTN Momo Food.",
       },
       {
-        achievement: "Achieved zero downtime with data center infrastructure upgrade - Vodafone Cash.",
+        achievement: "Achieved zero downtime with Method of Procedure (MoP) execution and data center infrastructure upgrade - Vodafone Cash.",
       },
     ],
     startTime: "2022-11",
