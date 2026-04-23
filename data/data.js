@@ -289,5 +289,44 @@ export const workExperiences = [
     company: "Huawei Technologies",
     employmentType: "Full-Time",
   },
+  {
+    position: "Philanthropic Co-CTO",
+    achievements: [
+      {
+        achievement: "Partnered with executive and departmental leaders to align technical strategy with overall business objectives securing $60000 in Mastercard equity-free grant.",
+      },
+      {
+        achievement: "Planned and coordinated weekly software development action plans, assigning tasks and supervising cross-functional engineering team of 12 employees.",
+      },
+      {
+        achievement: "Led the management and optimization of company-wide technology systems, platforms, and infrastructure servicing 1000 monthly average users (MAU).",
+      },
+      {
+        achievement: "Researched, evaluated, and recommended emerging technologies to improve development efficiency, scalability, and product quality for 19800 users.",
+      },
+      {
+        achievement: "Collaborated closely with the Chief Technical Officer to standardize product acquiring Bureau of Ghana Languages and  KNUST accreditation.",
+      },
+    ],
+    startTime: "2025-08",
+    endTime: "present",
+    company: "Ayaprep Limited (Ayaprep and Ayapoka)",
+    employmentType: "Freelance",
+  },
+  {
+    position: "Freelance Mobile Developer",
+    achievements: [
+      {
+        achievement: "Redesigned mobile application improving user retention by 20%.",
+      },
+      {
+        achievement: "Streamlined mobile application deployment (CI/CD) on huawei gallery, play store and app store with github actions.",
+      },
+    ],
+    startTime: "2023-12",
+    endTime: "2025-03",
+    company: "Ayaprep Limited (Ayaprep and Ayapoka)",
+    employmentType: "Freelance",
+  },
  
 ];
