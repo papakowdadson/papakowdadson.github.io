@@ -245,7 +245,7 @@ export const eventsData = [
 
 export const workExperiences = [
   {
-    position: "IT Business Analyst",
+    position: "Technical Business Analyst",
     achievements: [
       {
         achievement: "Translated complex business requirements into detailed technical specifications, including user stories, process flows, and technical documentation, ensuring alignment with MTN Fintech Group standards."
@@ -328,5 +328,32 @@ export const workExperiences = [
     company: "Ayaprep Limited (Ayaprep and Ayapoka)",
     employmentType: "Freelance",
   },
+  {
+    position: "Founder",
+    achievements: [
+      {
+        achievement: "Building a smart paratransit system for informal public transport (Troski) serving 100+ monthly average users (MAU) in Ghana",
+      },
+    ],
+    startTime: "2023-06",
+    endTime: "present",
+    company: "Trofare",
+    employmentType: "Self-Employed",
+  },
+  {
+    position: "Founder & Chief Servant",
+    achievements: [
+      {
+        achievement: "Collecting, Recycling and Donating pre-owned educational materials.",
+      },
+      {
+        achievement: "Creating a renewable ecosystem of educational materials.",
+      },
+    ],
+    startTime: "2022-06",
+    endTime: "present",
+    company: "SalvageMe Initiative Foundation",
+    employmentType: "Self-Employed",
+  }
  
 ];
