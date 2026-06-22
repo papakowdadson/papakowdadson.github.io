@@ -32,10 +32,10 @@ function CreateHelper(workExperience) {
       </div>
       <div style="display:flex;justify-content:space-between;margin-top:0.5rem;  margin-bottom: 0.8rem;
 ">
-          <p style="font-weight: semi-bold; font-size: 14px; color: #0296e9">${
+          <p style="font-weight: semi-bold; font-size: 1em; color: #0296e9">${
             workExperience.company
           }</p>
-          <p style="font-weight: semi-bold; font-size: 14px; color: #0296e9">${
+          <p style="font-weight: semi-bold; font-size: 1em; color: #0296e9">${
             workExperience.startTime
           } - ${workExperience.endTime}</p>
       </div>
