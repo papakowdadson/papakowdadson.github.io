@@ -108,6 +108,50 @@ a {
   color: var(--tertiaryColor);
   text-decoration: none;
 }
+
+.ctaExploreButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 14px 42px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primaryColor), #4f46e5);
+  /* border: 1px solid rgba(255,255,255,0.2); */
+  box-shadow: 0 10px 25px rgba(2,150,233,0.25);
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  animation: ctaExploreIdle 5s ease-in-out infinite;
+}
+.ctaExploreButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.24), transparent);
+  transform: translateX(-120%);
+  animation: ctaExploreSweep 8s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+.ctaExploreButton::after {
+  content: "→";
+  font-size: 1.05em;
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+.ctaExploreButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(79,70,229,.45);
+  filter: brightness(1.04);
+}
+.ctaExploreButton:hover::after {
+  transform: translateX(8px);
+}
+.ctaExploreButton:active {
+  transform: scale(0.96);
+}
 .navDesktopLeading {
   display: flex;
   justify-content: center;
@@ -206,7 +250,7 @@ label {
 
 .eventsContainer {
   margin-top: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   padding: 0 1rem;
   display: flex;
   overflow-y: hidden;
@@ -270,6 +314,150 @@ label {
   text-align: start;
   display: flex;
   gap: 5px;
+}
+
+.TopThreeProjectsContainer {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.certificationContainer {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.certificationContainer > .taglineHeader {
+  margin: 0.5rem 0 1rem 0;
+}
+.certificationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.certificationCarouselWrap {
+  margin-top: 1rem;
+}
+.certificationNav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.certificationNavDot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--tertiaryColor);
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  padding: 0;
+}
+.certificationNavDot.active {
+  background: var(--primaryColor);
+  transform: scale(1.2);
+}
+.certificationTrack {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.75rem;
+  scrollbar-width: none;
+}
+.certificationTrack::-webkit-scrollbar {
+  display: none;
+}
+.certificationCard {
+  flex: 0 0 min(100%, 360px);
+  max-width: 360px;
+  text-align: start;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, rgba(2, 150, 233, 0.2), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8rem;
+  scroll-snap-align: start;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.certificationLogoRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.certificationLogo {
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.35rem 0.6rem;
+}
+.certificationIssuerLogo {
+  max-height: 36px;
+  max-width: 38%;
+}
+.certificationBadge {
+  max-height: 64px;
+  max-width: 56%;
+}
+.certificationIssuer {
+  margin-top: 0.15rem;
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+.certificationFooter {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  font-size: 0.85rem;
+}
+.certificationIssuedDate {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.95rem;
+  color: var(--secondaryColor);
+}
+.certificationLink {
+  padding: 0.7rem 1rem;
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--tertiaryColor);
+  width: fit-content;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+.certificationLink:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transition: 0.5s ease;
+  color: var(--primaryColor);
+}
+.certificationLink img {
+  width: 16px;
+  height: 16px;
 }
 
 .otherProjectContainer {
@@ -648,6 +836,34 @@ label {
   }
 }
 
+@keyframes ctaExploreIdle {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px rgba(2,150,233,0.25);
+    filter: drop-shadow(0 0 0 rgba(255,255,255,0));
+  }
+  6% {
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgba(2,150,233,0.32);
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.12));
+  }
+  12% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px rgba(2,150,233,0.25);
+    filter: drop-shadow(0 0 0 rgba(255,255,255,0));
+  }
+}
+
+@keyframes ctaExploreSweep {
+  0% {
+    transform: translateX(-140%);
+  }
+  100% {
+    transform: translateX(140%);
+  }
+}
+
 @keyframes fadein {
   0% {
     display: none;
@@ -747,7 +963,15 @@ label {
     flex-direction: column;
   }
   .explore-my-work {
-    display: none;
+    display: block;
+    width: 100%;
+  }
+  .ctaExploreButton {
+    width: 100%;
+    min-height: 56px;
+    border-radius: 16px;
+    padding: 16px 24px;
+    animation: ctaExploreIdle 6s ease-in-out infinite;
   }
   .eventsContainer {
     display: none;

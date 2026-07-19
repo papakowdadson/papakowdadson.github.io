@@ -357,3 +357,52 @@ export const workExperiences = [
   }
  
 ];
+
+export const certifications = [
+  
+  {
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    issuerLogo: "./assets/certifications/awslogo.png",
+    certificationLogo: "./assets/certifications/cloudprac.png",
+    date: "May 2026",
+    credentialId: "837a966d-ecae-425f-a858-4cf75a6c4f37",
+    link: "https://www.credly.com/badges/837a966d-ecae-425f-a858-4cf75a6c4f37/linked_in_profile"
+  },
+  {
+    title: "Oracle Cloud Infrastructure Associate",
+    issuer: "Oracle",
+    issuerLogo: "./assets/certifications/oraclelogo.png",
+    certificationLogo: "./assets/certifications/ociassociate.png",
+    date: "Aug 2025",
+    credentialId: "4C73654D3466A1C3F7208ACE7FD093250F61953F70C187415D8A5D097B27E7F8",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=4C73654D3466A1C3F7208ACE7FD093250F61953F70C187415D8A5D097B27E7F8"
+  },
+  {
+    title: "Kubernetes and Cloud Native Associate",
+    issuer: "The Linux Foundation",
+    issuerLogo: "./assets/certifications/cncflogo.png",
+    certificationLogo: "./assets/certifications/ckalogo.png",
+    date: "May 2025",
+    credentialId: "250a0868-1a83-4644-a465-16771321d332",
+    link: "https://www.credly.com/badges/250a0868-1a83-4644-a465-16771321d332/linked_in_profile"
+  },
+  {
+    title: "Machine Learning Specialization",
+    issuer: "Stanford University & DeepLearning.AI",
+    issuerLogo: "./assets/certifications/stanfordlogo.png",
+    certificationLogo: "./assets/certifications/dlai-logo.webp",
+    date: "Dec 2024",
+    credentialId: "SUGFKN44YROI",
+    link: "https://www.coursera.org/account/accomplishments/specialization/SUGFKN44YROI"
+  },
+  {
+    title: "Huawei Certified ICT Associate",
+    issuer: "Huawei",
+    issuerLogo: "./assets/certifications/huaweilogo.png",
+    certificationLogo: "./assets/certifications/hcialogo.png",
+    date: "Dec 2019",
+    credentialId: "01010010132580766301160041",
+    link: "http://support.huawei.com/learning/verifycertificate"
+  },
+];
