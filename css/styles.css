@@ -16,7 +16,9 @@ html {
   scroll-padding-top: 95px;
   /* background-color: var(--backgroundColor); */
 }
-textarea {
+textarea,
+input[type="email"],
+input[type="tel"] {
   border-radius: 15px;
   padding: 20px 10px;
   background-color: var(--secondaryColor);
@@ -24,7 +26,14 @@ textarea {
   border: none;
   color: var(--tertiaryColor);
 }
-textarea:focus {
+textarea::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+  color: #ebeaea;
+}
+textarea:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
   outline: none !important;
   border: 2px solid var(--primaryColor);
 }
