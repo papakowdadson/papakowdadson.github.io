@@ -181,10 +181,32 @@
                     <form class="pure-form">
                         <label for="MailMessage">Message</label>
                         <textarea name="MailMessage" id="MailMessage" cols="30" rows="10" placeholder="Enter your message here" ></textarea>
-                        <button id='sendMail' class="sendMail" type="submit" >Hire Me</button>
+                        <button id='sendMail' class="sendMail" type="button" >Hire Me</button>
                     </form>
                 </div>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('a[href^="#"]').forEach((link) => {
+                    link.addEventListener("click", (event) => {
+                        const href = link.getAttribute("href");
+                        if (!href || href === "#") return;
+
+                        const target = document.querySelector(href);
+                        if (!target) return;
+
+                        event.preventDefault();
+                        const headerOffset = document.querySelector(".pageHeader")?.offsetHeight || 0;
+                        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset - 12;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: "smooth"
+                        });
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
 

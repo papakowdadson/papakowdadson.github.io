@@ -12,6 +12,8 @@ html {
   font-family: "Reem Kufi", sans-serif, "Roboto", sans-serif, "poppins",
     sans-serif;
   color: var(--tertiaryColor);
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
   /* background-color: var(--backgroundColor); */
 }
 textarea {
@@ -62,6 +64,9 @@ footer .projectList {
 }
 a {
   color: var(--primaryColor);
+}
+[id] {
+  scroll-margin-top: 95px;
 }
 .pageHeader {
   position: sticky;
@@ -136,7 +141,7 @@ a {
   z-index: -1;
 }
 .ctaExploreButton::after {
-  content: "→";
+  content: "↓";
   font-size: 1.05em;
   transition: transform 0.25s ease;
   display: inline-block;
@@ -427,16 +432,16 @@ label {
 .certificationIssuedDate {
   display: inline-flex;
   align-items: center;
-  padding: 0.25rem 0.6rem;
+  padding: 0.75rem 0.6rem;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.08);
   font-size: 0.95rem;
   color: var(--secondaryColor);
 }
 .certificationLink {
-  padding: 0.7rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 15px;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--tertiaryColor);
   width: fit-content;
@@ -802,6 +807,7 @@ label {
 }
 .sendMail {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .hideContent {

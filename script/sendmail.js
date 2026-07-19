@@ -1,12 +1,21 @@
-window.addEventListener("DOMContentLoaded", (event) => {
-let message = document.getElementById("MailMessage");
+window.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form.pure-form");
+  const message = document.getElementById("MailMessage");
+  const button = document.getElementById("sendMail");
 
-  document.querySelector('form.pure-form').addEventListener('submit', function (e) {
-    //prevent the normal submission of the form
-    e.preventDefault();
-    let content = message.value;
-    console.log(content); 
-    window.location.href = `mailto:papakowdadson@gmail.com?subject=From my Portfolio&&body=${content}`;   
-});
-  
+  if (!form || !message || !button) return;
+
+  const openMailClient = (event) => {
+    event.preventDefault();
+
+    const content = (message.value || "").trim();
+    const subject = encodeURIComponent("From my Portfolio");
+    const body = encodeURIComponent(content || "Hello Papa, I would love to connect.");
+    const mailtoLink = `mailto:papakowdadson@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+  };
+
+  form.addEventListener("submit", openMailClient);
+  button.addEventListener("click", openMailClient);
 });
