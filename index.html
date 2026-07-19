@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/themes/indigo-white.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="./script/sendmail.js" type="text/javascript"></script>
         <script type="module" src="./script/createEvents.js"></script>
         <script src="./script/createProject.js" type="module"></script>
@@ -178,10 +179,17 @@
                 </div>
                 <div class="containerMail">
                     <div  class="subHeader" >Contact Me</div>   
-                    <form class="pure-form">
+                    <form id="contact-form" class="pure-form">
+                        <label for="sender-email">Email</label>
+                        <input type="email" name="email" id="sender-email" placeholder="Enter your email" required>
+
+                        <label for="sender-phone">Phone Number</label>
+                        <input type="tel" name="phone" id="sender-phone" placeholder="Enter your phone number" required>
+
                         <label for="MailMessage">Message</label>
-                        <textarea name="MailMessage" id="MailMessage" cols="30" rows="10" placeholder="Enter your message here" ></textarea>
-                        <button id='sendMail' class="sendMail" type="submit" >Hire Me</button>
+                        <textarea name="message" id="MailMessage" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+                        <button id="sendMail" class="sendMail" type="submit">Hire Me</button>
+                        <p id="form-status" class="form-status" aria-live="polite"></p>
                     </form>
                 </div>
         </footer>
