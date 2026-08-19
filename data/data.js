@@ -290,7 +290,7 @@ export const workExperiences = [
     employmentType: "Full-Time",
   },
   {
-    position: "Philanthropic Co-CTO",
+    position: "Co-CTO",
     achievements: [
       {
         achievement: "Partnered with executive and departmental leaders to align technical strategy with overall business objectives securing $60000 in Mastercard equity-free grant.",
