@@ -195,14 +195,14 @@ a {
 }
 
 .header {
-  font-size: 3.75em;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: bold;
 }
 label {
   margin-top: 1rem;
 }
 .body {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 100;
 }
 .subHeader {
@@ -327,6 +327,10 @@ label {
   text-align: start;
   display: flex;
   gap: 5px;
+}
+
+.workExperienceContainer > .taglineHeader {
+  margin: 0.5rem 0 1rem 0;
 }
 
 .TopThreeProjectsContainer {
@@ -1038,9 +1042,7 @@ label {
 }
 
 @media (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
+  
   .profileMain {
     margin: 0px auto;
     max-width: 1280px;

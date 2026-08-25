@@ -20,6 +20,7 @@ function CreateHelper(event) {
     eventTitle.innerText = event.title;
     
     let eventDescription = document.createElement("p");
+    eventDescription.style.color = "#ececec";
     eventDescription.className = "eventDescription";
     eventDescription.innerText = event.description;
     

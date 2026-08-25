@@ -254,7 +254,7 @@ export const workExperiences = [
         achievement: "Leveraged technical skills in analyzing and documenting APIs for clear communication between development and business teams during third party integrations."
       },
       {
-        achievement: "Engineered solutions from User Requirements Specifications (URS) and Project Concept Documents (PCD) for MoMo Consumer App.",
+        achievement: "Engineered IT solutions from User Requirements Specifications (URS) and Project Concept Documents (PCD) for MoMo Consumer App.",
       },
     ],
     startTime: "2025-08",
@@ -266,22 +266,28 @@ export const workExperiences = [
     position: "Application and Software Engineer",
     achievements: [
       {
-        achievement: "Supported bill run (offline charging), mediation, provision, PRM, AAA and IMS integration - Telecel CBS.",
+        achievement: "Supported bill run (offline charging), mediation, provision, PRM, AAA and IMS integration.",
+        project: "Telecel CBS",
       },
       {
-        achievement: "Monitored, resolved and reported infrastructure alarms achieving high availability - G-Money & Telecel CBS.",
+        achievement: "Monitored, resolved and reported infrastructure alarms achieving high availability.",
+        project: "G-Money & Telecel CBS",
       },
       {
-        achievement: "Increased customer satisfaction by 15% through streamlined product configurations and intense user acceptance test (UAT) - G-Money.",
+        achievement: "Increased customer satisfaction by 15% through streamlined product configurations and intense user acceptance test (UAT).",
+        project: "G-Money",
       },
       {
-        achievement: "Achieved high system availability by optimising table spaces of the Oracle database - G-Money.",
+        achievement: "Achieved high system availability by optimising table spaces of the Oracle database.",
+        project: "G-Money",
       },
       {
-        achievement: "Collaborated with cross-functional teams to gather requirements and develop a digital catering system for over 30 million users - MTN Momo Food.",
+        achievement: "Collaborated with cross-functional teams to gather requirements and develop a digital catering system for over 30 million users.",
+        project: "MTN Momo Food",
       },
       {
-        achievement: "Achieved zero downtime with Method of Procedure (MoP) execution and data center infrastructure upgrade - Vodafone Cash.",
+        achievement: "Achieved zero downtime with Method of Procedure (MoP) execution and data center infrastructure upgrade.",
+        project: "Vodafone Cash"
       },
     ],
     startTime: "2022-11",
@@ -329,7 +335,7 @@ export const workExperiences = [
     employmentType: "Freelance",
   },
   {
-    position: "Founder",
+    position: "Founder & Software Engineer",
     achievements: [
       {
         achievement: "Building a smart paratransit system for informal public transport (Troski) serving 100+ monthly average users (MAU) in Ghana",
