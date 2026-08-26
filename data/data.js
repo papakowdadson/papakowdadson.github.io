@@ -299,13 +299,13 @@ export const workExperiences = [
     position: "Co-CTO",
     achievements: [
       {
-        achievement: "Partnered with executive and departmental leaders to align technical strategy with overall business objectives securing $60000 in Mastercard equity-free grant.",
+        achievement: "Partnered with executive and departmental leaders to align technical strategy with overall business objectives securing $60,000 in Mastercard equity-free grant.",
       },
       {
         achievement: "Planned and coordinated weekly software development action plans, assigning tasks and supervising cross-functional engineering team of 12 employees.",
       },
       {
-        achievement: "Led the management and optimization of company-wide technology systems, platforms, and infrastructure servicing 1000 monthly average users (MAU).",
+        achievement: "Led the management and optimization of company-wide technology systems, platforms, and infrastructure servicing 1,000 monthly average users (MAU).",
       },
       {
         achievement: "Researched, evaluated, and recommended emerging technologies to improve development efficiency, scalability, and product quality for 19800 users.",
