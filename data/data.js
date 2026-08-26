@@ -308,7 +308,7 @@ export const workExperiences = [
         achievement: "Led the management and optimization of company-wide technology systems, platforms, and infrastructure servicing 1,000 monthly average users (MAU).",
       },
       {
-        achievement: "Researched, evaluated, and recommended emerging technologies to improve development efficiency, scalability, and product quality for 19800 users.",
+        achievement: "Researched, evaluated, and recommended emerging technologies to improve development efficiency, scalability, and product quality for 19,800 users.",
       },
       {
         achievement: "Collaborated closely with the Chief Technical Officer to standardize product acquiring Bureau of Ghana Languages and  KNUST accreditation.",
