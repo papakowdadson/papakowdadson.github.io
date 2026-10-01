@@ -27,6 +27,10 @@ export const projectsData = [
         name: "Trofare Driver",
         url: "https://play.google.com/store/apps/details?id=com.trofare.trofaredriver",
       },
+      {
+        name: "Trofare Website",
+        url: "https://www.trofare.papakowdadson.com/",
+      },
     ],
   },
   {
@@ -35,12 +39,12 @@ export const projectsData = [
     type: "Web",
     description:
       "SalvageMe is a dedicated NGO focused on promoting literacy, education, and environmental conservation through its innovative approach.\n By collecting, refurbishing and redistributing new and gently used educational materials, including physical books and e-books, we aim to lower the rate of new book production, thus helping to conserve trees and mitigate carbon emissions associated with book production and disposal.",
-    appLink: { name: "SalvageMe", url: "https://salvage-me.vercel.app/" },
+    appLink: { name: "SalvageMe", url: "https://salvageme.papakowdadson.com/" },
     tools: ["Reactjs", "Nodejs-Express"],
     otherLink: [
-      { name: "Dashboard", url: "https://salvage-me-admin.vercel.app/" },
+      { name: "Dashboard", url: "https://salvagemeadmin.papakowdadson.com/login" },
       {
-        name: "Ayoba Deployment",
+        name: "SalvageMe Ayoba Deployment",
         url: "https://play.google.com/store/apps/details?id=com.ayoba.ayoba",
       },
     ],
@@ -51,12 +55,12 @@ export const projectsData = [
     type: "Web3",
     description:
       "A Smart Contract for awarding government projects and payment. \n Billions of dollars in state funds are lost to ghost and uncompleted projects. I implemented a blockchain network to allow citizens to verify projects and confirm the release of funds to contractors.",
-    appLink: { name: "C-Auth", url: "https://c-auth.vercel.app/" },
+    appLink: { name: "C-Auth", url: "https://cauth.papakowdadson.com/" },
     tools: ["Reactjs", "Nodejs-Express", "Solidity", "Rest API", "Blockchain"],
     otherLink: [
       {
         name: "C-Auth",
-        url: "https://c-auth.vercel.app/",
+        url: "https://cauth.papakowdadson.com/",
       },
     ],
   },
