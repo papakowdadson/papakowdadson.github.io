@@ -263,11 +263,17 @@ label {
 }
 
 .eventsContainer {
-  max-width: 1200px;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 0;
   margin: 6rem auto 3rem;
   padding: 0 1.5rem;
   color: #f5f7fb;
   overflow: hidden;
+}
+.eventCarousel {
+  min-width: 0;
+  max-width: 100%;
 }
 .eventsHeader {
   max-width: 760px;
@@ -286,7 +292,7 @@ label {
 }
 .eventStats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -299,6 +305,7 @@ label {
   border: 1px solid #223249;
   border-radius: 18px;
   background: #101a2b;
+  min-width: 0;
 }
 .eventStat strong {
   color: #13b1f3;
@@ -384,7 +391,7 @@ label {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-color: #31415b transparent;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 .eventCards::-webkit-scrollbar {
   height: 8px;
@@ -429,38 +436,55 @@ label {
   right: 1.5rem;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   color: white;
   font-size: 1.15rem;
 }
-.eventCardBody { padding: 1.7rem 2rem 1.4rem; }
+.eventCardDetails span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.eventCardBody {
+  min-width: 0;
+  padding: 1.7rem 2rem 1.4rem;
+}
 .eventOrganization {
   color: #13b1f3;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: .1em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 .eventCard h3 {
   margin-top: .75rem;
   font-size: 1.8rem;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 .eventCardBody p {
   margin-top: .9rem;
   color: #c0cbdb;
   font-size: 1.2rem;
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 .eventCardFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid #223249;
 }
-.eventTags { display: flex; gap: .5rem; }
+.eventTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  min-width: 0;
+}
 .eventTags span {
   padding: 5px 12px;
   border-radius: 6px;
@@ -471,7 +495,7 @@ label {
   color: #12b3f4;
   font-size: 1.15rem;
   font-weight: 700;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 .eventCardFooter a span { font-size: 1.5rem; }
 .eventDots {
@@ -496,7 +520,7 @@ label {
 }
 
 .workExperienceContainer {
-  margin: 1.5rem auto;
+  margin: 1.5rem auto 3rem auto;
   text-align: center;
   padding: 0 1rem;
 }
@@ -518,7 +542,7 @@ label {
 
 .certificationContainer {
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   text-align: center;
   padding: 0 1rem;
 }
@@ -1153,7 +1177,7 @@ label {
     height: 24px;
   }
   .profileMain > .intro {
-    margin-top: 1em;
+    margin-top: 6rem;
   }
   .myProjectBackground {
     margin: 1.5rem 0;

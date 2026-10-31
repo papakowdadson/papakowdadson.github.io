@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const header = document.createElement("div");
   header.className = "eventsHeader";
   header.innerHTML = `
-    <h2>Events Attended</h2>
+    <h2>Beyond the Code</h2>
     <p>Keynotes, tech summits, hackathons, and community meetups spanning paratransit mobility, fintech APIs, cloud native, and social impact.</p>
   `;
 
@@ -87,13 +87,13 @@ window.addEventListener("DOMContentLoaded", () => {
       return `
         <article class="eventCard">
           <div class="eventCardImage" style="background-image: url('${event.image}')">
-            <span class="eventType">${event.contentType === "video" ? "FOUNDER / PITCH" : "FIELD ENGAGEMENT"}</span>
+            <span class="eventType">${event.role}</span>
             <div class="eventCardDetails"><span>⌖ ${event.location}</span><span>${formattedDate}</span></div>
           </div>
           <div class="eventCardBody">
             <span class="eventOrganization">${event.title}</span>
-            <h3>${event.description}</h3>
-            <p>Participated in ${event.description.toLowerCase()} presenting paratransit ride-sharing algorithms and urban congestion relief.</p>
+            <h3>${event.subtitle}</h3>
+            <p>${event.description}</p>
             <div class="eventCardFooter">
               <div class="eventTags">${tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
               <a href="${event.link}" target="_blank" rel="noreferrer">View Recap <span>→</span></a>
