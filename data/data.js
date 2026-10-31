@@ -219,6 +219,8 @@ export const eventsData = [
     image: "./assets/imageEvents/TrofareFlutterGhana.jpeg",
     description: "Trofare presentation.",
     date: "2022-09-10",
+    eventType: "Mobility & Tech",
+    location: "Accra, Ghana",
     link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
   {
@@ -227,6 +229,8 @@ export const eventsData = [
     image: "./assets/imageEvents/SalvagemeKapioto.JPG",
     description: "Educational materials donation at kapioto.",
     date: "2024-09-10",
+    eventType: "Social & Community",
+    location: "Kapioto, Ghana",
     link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
   {
@@ -235,6 +239,8 @@ export const eventsData = [
     image: "./assets/imageEvents/TechstarHub.png",
     description: "Meetup and Demo Day.",
     date: "2022-09-10",
+    eventType: "Mobility & Tech",
+    location: "Accra, Ghana",
     link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
   {
@@ -243,6 +249,8 @@ export const eventsData = [
     image: "./assets/imageEvents/TrofareTreck.jpeg",
     description: "Sustainable Mobilty.",
     date: "2022-09-10",
+    eventType: "Mobility & Tech",
+    location: "Kumasi, Ghana",
     link: "https://youtu.be/rSj6pyiY5P0?si=eZaGmtUxWW68uQdZ",
   },
 ];
