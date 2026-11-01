@@ -379,6 +379,21 @@ export const workExperiences = [
     employmentType: "Freelance",
   },
   {
+    position: "Freelance Lead Software Development Consultant",
+    achievements: [
+      {
+        achievement: "Led the development for the launch of Munakalati  mobile and web applications aimed at promoting African children's books and educational content for African families and schools.",
+      },
+      {
+        achievement: "Developed REST API with a latency of 100ms.",
+      },
+    ],
+    startTime: "2024-07",
+    endTime: "2024-11",
+    company: "Kabod Group",
+    employmentType: "Freelance",
+  },
+  {
     position: "Founder & Software Engineer",
     achievements: [
       {
@@ -405,7 +420,6 @@ export const workExperiences = [
     company: "SalvageMe Initiative Foundation",
     employmentType: "Self-Employed",
   }
- 
 ];
 
 export const certifications = [
