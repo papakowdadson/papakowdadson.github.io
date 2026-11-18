@@ -336,6 +336,9 @@ export const workExperiences = [
       {
         achievement: "Engineered IT solutions from User Requirements Specifications (URS) and Project Concept Documents (PCD) for MoMo Consumer App.",
       },
+      {
+        achievement: "Actively collaborated with partners and Ericsson to integrate over 15 mini-apps.",
+      },
     ],
     startTime: "2025-08",
     endTime: "present",
