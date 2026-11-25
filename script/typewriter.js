@@ -1,8 +1,10 @@
 window.addEventListener("DOMContentLoaded", function() {
-    const text = "Hi👋🏼, it's Dadson... The guy on a journey to Software Engineering!";
+    const text = "Hi👋🏼, it's Dadson... turning curiosity and a few lines of code into solutions.";
     const spans = {
         "Dadson": "primaryColor",
-        "Software Engineering": "primaryColor"
+        "curiosity": "primaryColor",
+        "code": "primaryColor",
+        "solutions": "primaryColor"
     };
     const introHeader = document.querySelector(".typwriterContainer");
     let index = 0;
